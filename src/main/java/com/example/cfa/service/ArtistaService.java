@@ -14,7 +14,7 @@ public class ArtistaService {
     @Autowired
     private ArtistaRepository artistaRepository;
     
-    public List<Artista> listarArtistas() {
+    public Iterable<Artista> listarArtistas() {
         return artistaRepository.findAll();
     }
     

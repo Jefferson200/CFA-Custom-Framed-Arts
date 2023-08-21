@@ -1,5 +1,6 @@
 package com.example.cfa.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +20,9 @@ public class ArtistaController {
     
     @GetMapping
     public ResponseEntity<List<Artista>> listarArtistas() {
-        List<Artista> artistas = artistaService.listarArtistas();
-        return ResponseEntity.ok(artistas);
+    	// arrumar
+        // List<Artista> artistas = artistaService.listarArtistas();
+        return ResponseEntity.ok(new ArrayList<Artista>());
     }
     
     @GetMapping("/{id}")
